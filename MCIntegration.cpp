@@ -34,7 +34,7 @@ printf ("\nCalculation using %d events\n",N);       // statistics
 sum=0; sum2=0;                                      // initialize sum and sum2
 
 for (i=0; i<N; i++) {                               // loop on event number
-    p=drand48();                                    // random number in (0,1)
+    p=drand48();                                    // random number in [0,1) as per https://shorturl.at/G2LpV
     x=pow(p,0.2);                                   // INSERT HERE x(p)
     fx=pow(x,2)*pow(sin(x),2);                      // INSERT HERE f(x)
     wx=5*pow(x,4);                                  // INSERT HERE w(x)
